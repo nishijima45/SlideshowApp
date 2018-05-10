@@ -14,6 +14,7 @@
 		EAA4459F20A46C2000C3962C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA4459D20A46C2000C3962C /* LaunchScreen.storyboard */; };
 		EAA445AA20A46C2000C3962C /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA445A920A46C2000C3962C /* SlideshowAppTests.swift */; };
 		EAA445B520A46C2000C3962C /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA445B420A46C2000C3962C /* SlideshowAppUITests.swift */; };
+		EAA445C320A475C900C3962C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA445C220A475C900C3962C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EAA445B020A46C2000C3962C /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA445B420A46C2000C3962C /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		EAA445B620A46C2000C3962C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA445C220A475C900C3962C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EAA4459B20A46C2000C3962C /* Assets.xcassets */,
 				EAA4459D20A46C2000C3962C /* LaunchScreen.storyboard */,
 				EAA445A020A46C2000C3962C /* Info.plist */,
+				EAA445C220A475C900C3962C /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				EAA4459720A46C1C00C3962C /* ViewController.swift in Sources */,
 				EAA4459520A46C1C00C3962C /* AppDelegate.swift in Sources */,
+				EAA445C320A475C900C3962C /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

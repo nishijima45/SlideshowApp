@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func go(_ sender: Any) {
+    }
+    
+    @IBAction func goBack(_ sender: Any) {
+    }
 
+    @IBAction func playOrStop(_ sender: Any) {
+    }
+    
 }
 
