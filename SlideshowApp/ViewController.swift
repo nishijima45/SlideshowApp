@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func go(_ sender: Any) {
+        
     }
     
     @IBAction func goBack(_ sender: Any) {
@@ -29,5 +30,9 @@ class ViewController: UIViewController {
     @IBAction func playOrStop(_ sender: Any) {
     }
     
+    @IBOutlet weak var zoom: UIImageView!
+
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
 }
 

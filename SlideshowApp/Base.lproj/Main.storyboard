@@ -32,12 +32,16 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-l8-MA2">
                                 <rect key="frame" x="8" y="28" width="359" height="400"/>
+                                <color key="backgroundColor" red="0.94218173490000001" green="1" blue="0.46112109820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="g3b-ya-7vB"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-lN-ISR">
                                 <rect key="frame" x="8" y="28" width="359" height="400"/>
+                                <connections>
+                                    <segue destination="7yQ-rl-wi0" kind="show" id="iwq-iX-Avf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BO-F8-PQU">
                                 <rect key="frame" x="57.5" y="528" width="80" height="50"/>
@@ -84,8 +88,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="zoom" destination="ldC-l8-MA2" id="m8q-8I-9j1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="aMe-IZ-R7U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-242.40000000000001" y="106.59670164917542"/>
         </scene>
@@ -99,13 +107,28 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FGy-KS-RQd">
                                 <rect key="frame" x="8" y="28" width="359" height="400"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="XGZ-pd-T5u"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-EF-50W">
+                                <rect key="frame" x="147.5" y="528" width="80" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="1tk-Rv-Ztr"/>
+                                    <constraint firstAttribute="height" constant="50" id="QfA-Eo-bcH"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="aMe-IZ-R7U" kind="unwind" unwindAction="unwind:" id="Vhc-6K-Mu4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bZP-EF-50W" firstAttribute="top" secondItem="FGy-KS-RQd" secondAttribute="bottom" constant="100" id="49j-0a-sfY"/>
+                            <constraint firstItem="bZP-EF-50W" firstAttribute="centerX" secondItem="PH0-0L-f9d" secondAttribute="centerX" id="MPM-yC-d40"/>
                             <constraint firstItem="FGy-KS-RQd" firstAttribute="top" secondItem="vkI-N9-KMN" secondAttribute="top" constant="8" id="b97-Bk-mMn"/>
                             <constraint firstItem="vkI-N9-KMN" firstAttribute="trailing" secondItem="FGy-KS-RQd" secondAttribute="trailing" constant="8" id="rqB-Ig-kBs"/>
                             <constraint firstItem="FGy-KS-RQd" firstAttribute="leading" secondItem="vkI-N9-KMN" secondAttribute="leading" constant="8" id="t1C-dA-KU4"/>
@@ -115,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7P-PP-9bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="107"/>
+            <point key="canvasLocation" x="549.60000000000002" y="106.59670164917542"/>
         </scene>
     </scenes>
 </document>
