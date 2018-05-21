@@ -30,7 +30,7 @@
                                     <action selector="playOrStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x26-OP-3Ud"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-l8-MA2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-l8-MA2">
                                 <rect key="frame" x="8" y="28" width="359" height="400"/>
                                 <color key="backgroundColor" red="0.94218173490000001" green="1" blue="0.46112109820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -141,4 +141,7 @@
             <point key="canvasLocation" x="549.60000000000002" y="106.59670164917542"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.jpg" width="2448" height="3264"/>
+    </resources>
 </document>
