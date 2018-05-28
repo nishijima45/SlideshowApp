@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="50" id="8MF-BA-aCD"/>
                                     <constraint firstAttribute="width" constant="80" id="gbg-kz-LRY"/>
                                 </constraints>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="playOrStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x26-OP-3Ud"/>
                                 </connections>
@@ -36,12 +36,6 @@
                                     <constraint firstAttribute="height" constant="327" id="g3b-ya-7vB"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-lN-ISR">
-                                <rect key="frame" x="24" y="44" width="327" height="327"/>
-                                <connections>
-                                    <segue destination="7yQ-rl-wi0" kind="show" id="iwq-iX-Avf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BO-F8-PQU">
                                 <rect key="frame" x="57.5" y="471" width="80" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,6 +60,12 @@
                                     <action selector="goBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouV-A9-htg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-lN-ISR">
+                                <rect key="frame" x="24" y="31" width="327" height="327"/>
+                                <connections>
+                                    <segue destination="7yQ-rl-wi0" kind="show" id="iwq-iX-Avf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -88,6 +88,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="mZS-NR-5n9" id="Il6-T6-5eA"/>
                         <outlet property="zoom" destination="ldC-l8-MA2" id="m8q-8I-9j1"/>
                     </connections>
                 </viewController>
