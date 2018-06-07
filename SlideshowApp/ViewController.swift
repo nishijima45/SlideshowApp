@@ -39,6 +39,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if self.timer != nil {
+            pauseTimer()
+        }
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController? = segue.destination as? ResultViewController
         // 遷移先のResultViewControllerで宣言しているtextFieldに値を代入して渡す
@@ -69,14 +72,6 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func zoomview(_ sender: Any) {
-        if self.timer != nil {
-            pauseTimer()
-        }
-    }
-    
-    
-    
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
