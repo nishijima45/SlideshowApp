@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,11 +16,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZS-NR-5n9">
-                                <rect key="frame" x="237.5" y="471" width="80" height="50"/>
+                                <rect key="frame" x="210" y="416" width="80" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8MF-BA-aCD"/>
@@ -32,13 +32,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-l8-MA2">
-                                <rect key="frame" x="24" y="44" width="327" height="327"/>
+                                <rect key="frame" x="24" y="44" width="272" height="272"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ldC-l8-MA2" secondAttribute="height" multiplier="1:1" id="XGB-T7-fTM"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BO-F8-PQU">
-                                <rect key="frame" x="57.5" y="471" width="80" height="50"/>
+                                <rect key="frame" x="30" y="416" width="80" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MCm-q5-SHn"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvM-ts-5Wh">
-                                <rect key="frame" x="147.5" y="471" width="80" height="50"/>
+                                <rect key="frame" x="120" y="416" width="80" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="cpV-mB-WgV"/>
@@ -62,8 +62,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-lN-ISR">
-                                <rect key="frame" x="24" y="44" width="327" height="327"/>
+                                <rect key="frame" x="24" y="44" width="272" height="272"/>
                                 <connections>
+                                    <action selector="zoomview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rs5-DN-9Lu"/>
                                     <segue destination="7yQ-rl-wi0" kind="show" id="iwq-iX-Avf"/>
                                 </connections>
                             </button>
@@ -105,17 +106,17 @@
             <objects>
                 <viewController id="7yQ-rl-wi0" customClass="ResultViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PH0-0L-f9d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FGy-KS-RQd">
-                                <rect key="frame" x="8" y="28" width="359" height="354"/>
+                                <rect key="frame" x="8" y="28" width="304" height="299.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FGy-KS-RQd" secondAttribute="height" multiplier="76:75" id="Lww-h2-br5"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-EF-50W">
-                                <rect key="frame" x="147.5" y="470" width="80" height="50"/>
+                                <rect key="frame" x="120" y="415.5" width="80" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="67d-oK-37C"/>

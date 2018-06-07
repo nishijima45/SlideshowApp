@@ -69,6 +69,14 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func zoomview(_ sender: Any) {
+        if self.timer != nil {
+            pauseTimer()
+        }
+    }
+    
+    
+    
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
